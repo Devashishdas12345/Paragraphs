@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Paragraphs</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="main.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <div id="PG1">
+            <center>
+                <h1>
+                    Paragraphs
+                </h1>
+                <button type="reset" class="btn-danger" id="SSS">Only enter one sentence in one input box...</button>
+                <br>
+                <span>
+                    <span>1.</span>
+                    <input type="text" id="n1" placeholder="Sentence 1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>1.</span>
+                    <input type="text" id="m1" placeholder="Sentence 1">
+                </span>
+                <br>
+                <span>
+                    <span>2.</span>
+                    <input type="text" id="n2" placeholder="Sentence 2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>2.</span>
+                    <input type="text" id="m2" placeholder="Sentence 2">
+                </span>
+                <br>
+                <span>
+                    <span>3.</span>
+                    <input type="text" id="n3" placeholder="Sentence 3">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>3.</span>
+                    <input type="text" id="m3" placeholder="Sentence 3">
+                </span>
+                <br>
+                <span>
+                    <span>4.</span>
+                    <input type="text" id="n4" placeholder="Sentence 4">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>4.</span>
+                    <input type="text" id="m4" placeholder="Sentence 4">
+                </span>
+                <br>
+                <span>
+                    <span>5.</span>
+                    <input type="text" id="n5" placeholder="Sentence 5">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>5.</span>
+                    <input type="text" id="m5" placeholder="Sentence 5">
+                </span>
+                <br>
+                <span>
+                    <span>6.</span>
+                    <input type="text" id="n6" placeholder="Sentence 6">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>6.</span>
+                    <input type="text" id="m6" placeholder="Sentence 6">
+                </span>
+                <br>
+                <span>
+                    <button type="button" id="PO" class="btn-success" onclick="Para123()">Paragraph 1</button>
+                    <button type="button" id="KE" class="btn-success" onclick="Para456()">Paragraph 2</button>
+                </span>
+            </center>
+            
+        </div>
+        <center>
+            <div id="display_para1">
+
+            </div>
+            <div id="display_para2">
+
+            </div>
+            <br>
+            <button type="reset" id="Clear" class="btn-primary" onclick="RESETCLEAR()">Clear both the paragraphs</button>
+        </center>
+    <style>
+        h1 {
+            margin-left: 100px;
+        }
+        #SSS {
+            margin-left: 100px;
+        }
+        span {
+            margin-left: 0px;
+            margin-top: 10px;
+        } 
+        input {
+            margin-top: 10px;
+        }
+        h3 {
+            margin-left: 350px;
+            margin-top: 0px;
+        }
+        #PG2 {
+            text-align: right;
+            margin-top: 100px;
+        }
+        #DD {
+            margin-left: 725px;
+        }
+        #PO {
+            margin-top: 10px;
+            margin-right: 120px;
+        }
+        #KE {
+            margin-top: 10px;
+            margin-left: 250px;
+        }
+        #display_para1 {
+            margin-top: 10px;
+            background-color: rgb(255, 139, 139);
+            width: 50%;
+            height: 70%;
+            padding: 10px;
+            border-width: 10px;
+            border-radius: 10px;
+            margin-left: 30px;
+            font-size: x-large;
+            font-weight: bolder;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #display_para2 {
+            margin-top: 10px;
+            background-color: rgb(162, 255, 139);
+            width: 50%;
+            height: 70%;
+            padding: 10px;
+            border-width: 10px;
+            border-radius: 10px;
+            margin-left: 30px;
+            font-size: x-large;
+            font-weight: bolder;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #Clear {
+            margin-left: 50px;
+        }
+    </style>
+    <script>
+        var PTC_=[];
+        function Para123() {
+            var PARAINPUT=[];
+            for (var i=1; i<=6; i++) {
+                var ANY= document.getElementById("n"+i).value;
+                console.log(ANY);
+                PTC_.push(ANY);
+            }
+           console.log(PTC_);
+
+           var length123= PTC_.length;
+           console.log(length123);
+
+
+           for (var k=0; k < length123; k++) {
+               PARAINPUT.push(PTC_[k]);
+               console.log(PARAINPUT);
+           }
+           console.log(PARAINPUT);
+
+
+           var fullstop=PARAINPUT.join(". ");
+           console.log(fullstop);
+           document.getElementById("display_para1").innerHTML=fullstop;
+
+        }
+
+           var PTC2_=[];
+        function Para456() {
+            var PARAINPUT2=[];
+            for (var i2=1; i2<=6; i2++) {
+                var ANY2= document.getElementById("m"+i2).value;
+                console.log(ANY2);
+                PTC2_.push(ANY2);
+            }
+           console.log(PTC2_);
+
+           var length1234= PTC2_.length;
+           console.log(length1234);
+
+
+           for (var k2=0; k2 < length1234; k2++) {
+               PARAINPUT2.push(PTC2_[k2]);
+               console.log(PARAINPUT2);
+           }
+           console.log(PARAINPUT2);
+
+
+           var fullstop2=PARAINPUT2.join(". ");
+           console.log(fullstop2);
+           document.getElementById("display_para2").innerHTML=fullstop2;
+
+        }
+
+        function RESETCLEAR() {
+            document.getElementById("display_para1").innerHTML="";
+            document.getElementById("display_para2").innerHTML="";
+        }
+    </script>
+</body>
+</html>
